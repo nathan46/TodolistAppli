@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textHisto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Historique des choses faites"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textAlignment="center"/>
+
+    <ListView
+        android:id="@+id/line_liste"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textHisto"
+        android:layout_marginBottom="10sp" />
+
+</RelativeLayout>

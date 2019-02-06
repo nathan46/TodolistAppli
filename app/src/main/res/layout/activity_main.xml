@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.nathan.todolist.MainActivity">
+
+    <ListView
+        android:id="@+id/line_liste"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/nouvTache"
+        android:layout_marginBottom="10sp" />
+    <!-- android:layout_above="@+id/affichage"!-->
+
+
+    <TextView
+        android:id="@+id/nouvTache"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/enter"
+        android:text="Ajouter une nouvelle tache "
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="10sp"
+        />
+
+
+    <EditText
+        android:id="@+id/enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/nouvTache"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/nouvTache"
+        android:layout_marginBottom="26sp" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        android:layout_marginStart="20sp"
+        android:layout_toEndOf="@+id/enter"
+        android:layout_alignTop="@+id/enter"
+        app:fabSize="mini"
+        android:visibility="invisible"
+        />
+    <!--
+     <Button
+         android:id="@+id/affichage"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Tout afficher"
+         android:layout_alignParentBottom="true"
+     />
+
+     <Button
+         android:id="@+id/ajouter"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Ajouter une ligne test"
+         android:layout_alignTop="@+id/affichage"
+         android:layout_alignParentEnd="true"
+    />
+    !-->
+
+</RelativeLayout>
